@@ -71,43 +71,28 @@ div.reset{
     margin: 2vw;
 }
 .item2 {
-grid-row-start: 1;
-}
-.item2 {
-    /* grid-column-start: 3; */
-    /* grid-column: 3; */
-      /* grid-row: 1; */
+      grid-column: 3;
     }
-
-.item3 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 2;
+    .item3 {
+        grid-row: 2;
+        /* margin-top: 5vw; */
 }
-
 .item4 {
-    grid-row: 3;
-    grid-column-start: 1;
-    grid-column-end: 3;
+      grid-row: 3;
 }
-
 .item5 {
-    grid-row: 9;
-    grid-column-start: 1;
-    grid-column-end: 3;
+      grid-row: 9;
 }
 
     /* FORM            FORM            FORM            FORM */
 
         input{
             height: 3.5vw;
-            all: unset;
-            
         }
-        
+
         input[type=text]{
             width: 25vw;
-            /* color: #d8dbe2ff; */
+        /* color: #d8dbe2ff; */
         }
         input[type=email]{
             width: 53vw;
@@ -120,14 +105,23 @@ grid-row-start: 1;
             resize: none;
         }
         button{
-            /* width: 53vw; */
-            width: 100%;
+            width: 53vw;
+            /* width: 545%; */
             height: 3.5vw;
         border: none;
         /* margin: 1.5vw; */
         cursor: pointer;
         }
+        .form-row {
+        display: flex;
+        gap: 10vw; /* space between inputs */
+        margin: 1.5vw;
+        }
 
+        .form-group {
+        /* display: flex; */
+        flex-direction: column;
+        }
 
 /* DIVs            DIVs            DIVs            DIVs  */
 
