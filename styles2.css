@@ -29,6 +29,10 @@ body{
     /* overflow: hidden; */
 }
 
+img{
+    object-fit: contain;
+}
+
 .container{
     display: flex; 
     flex-wrap: wrap;
@@ -84,13 +88,7 @@ ul::scroll-button(*):disabled {
   cursor: unset;
   background-color: #a53860ff;
 }
-/* ul::scroll-button(left) {
-  content: "◄";
-}
 
-ul::scroll-button(right) {
-  content: "►";
-} */
 ul {
   anchor-name: --my-carousel;
 }
@@ -107,6 +105,7 @@ ul::scroll-button(left) {
     width: 10vw;
     height: 12.5vw;
     right: calc(anchor(left) + 0vw);
+    bottom: calc(anchor(bottom) - 0vw);
     background-color: #59114dff;
 }
 
@@ -117,33 +116,34 @@ ul::scroll-button(right) {
     background-size: contain;
     width: 10vw;
     height: 12.5vw;
-  left: calc(anchor(right) + 0vw);
-  background-color: #074f57ff;
+    left: calc(anchor(right) + 0vw);
+    bottom: calc(anchor(bottom) - 0vw);
+    background-color: #074f57ff;
 }
 
 
 ul {
-  scroll-marker-group: after;
+    scroll-marker-group: after;
 } 
 ul::scroll-marker-group {
-  position: absolute;
-  position-anchor: --my-carousel;
-  top: calc(anchor(bottom) - 4vw);
-  justify-self: anchor-center;
-  display: flex;
-  justify-content: center;
-  gap: 3vw;
+    position: absolute;
+    position-anchor: --my-carousel;
+    top: calc(anchor(bottom) - 16.5vw);
+    justify-self: anchor-center;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
 }
 li::scroll-marker {
-  content: "";
-  width: 2vw;
-  height: 2vw;
-  background-color: transparent;
-  border: .5vw solid #59114dff;
-  border-radius: 50%;
+    content: "";
+    width: 2vw;
+    height: 2vw;
+    background-color: transparent;
+    border: .5vw solid #59114dff;
+    border-radius: 50%;
 }
 li::scroll-marker:target-current {
-  background-color: #ff715bff;
+    background-color: #ff715bff;
 }
 
 
@@ -420,7 +420,6 @@ button:hover{
         }
 
         p {
-            /* background-color:e; */
             margin: 0;
             border: 0;
             padding: 0;
@@ -483,6 +482,11 @@ button:hover{
         .tworem{
             font-size: 2.4vw;
             font-size: 3vw;
+            text-align: center;
+            line-height: 1.1;
+        }
+        .onerem{
+            font-size: 2.5vw;
             text-align: center;
             line-height: 1.1;
         }
@@ -561,6 +565,7 @@ a:hover{
       color: #3BA99C;
     }
 .above{
-     z-index: 200;
+    position: relative;
+     z-index: 2;
 }
 
