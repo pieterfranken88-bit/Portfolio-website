@@ -374,7 +374,7 @@ button:hover{
         }
 
         div:hover{
-        cursor: pointer;
+        /* cursor: pointer; */
         transition-duration: .4s;
         opacity: 1;
         }
