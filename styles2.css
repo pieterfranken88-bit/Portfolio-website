@@ -7,6 +7,14 @@
     margin: 0;
     padding: 0;
 }
+.monda {
+  font-family: "Monda", sans-serif;
+  /* font-optical-sizing: auto; */
+  font-size: 2vw;
+  line-height: 1.05;
+  font-weight: 700;
+  font-style: normal;
+}
 
 .normal{
     font-weight: 600;
@@ -313,21 +321,25 @@ button:hover{
              width: 40vw;
             height: 25vw; 
         }
-                .div43 {
+        .div43 {
             width: 40vw;
             height: 37.5vw;
         }
+        .div44 {
+            width: 40vw;
+            height: 50vw;
+        }
         .div51 {
             width: 50vw;
-            height: 12.5em;
+            height: 12.5vw;
         }
         .div52 {
             width: 50vw;
-            height: 25em;
+            height: 25vw;
         }
         .div53 {
             width: 50vw;
-            height: 37.5em;
+            height: 37.5vw;
         }
         .div61 {
             width: 60vw;
@@ -459,9 +471,17 @@ button:hover{
         div:hover.hoverred{
         background-color: #a53860ff;
         }
-
+        
         .redt {
             color: #a53860ff;
+        }
+
+        div:hover.hovertextred{
+        color: #a53860ff;
+        }
+
+        div:hover.boxshadow{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         }
 
         p {
@@ -482,24 +502,50 @@ button:hover{
             text-align: center;
             line-height: .9;
         }
+        .eightrem{
+            /* font-size: 7vw; */
+            font-size: 10vw;
+            font-weight: 700;
+            text-align: center;
+            line-height: .8;
+        }
+
         .sevenrem{
             /* font-size: 7vw; */
             font-size: 8.75vw;
             text-align: center;
             line-height: .9;
         }
+
         .sixrem{
             /* font-size: 6vw; */
             font-size: 7.8vw;
             text-align: center;
             line-height: .9;
         }
+
+        .fivefiverem{
+            /* font-size: 5vw; */
+            font-size: 7vw;
+            text-align: center;
+            line-height: 1;
+        }
+
         .fiverem{
             /* font-size: 5vw; */
             font-size: 6.25vw;
             text-align: center;
             line-height: .9;
+            font-weight: 650;
         }
+
+        .fourfiverem{
+            /* font-size: 4.0vw; */
+            font-size: 5.5vw;
+            /* text-align: center; */
+            line-height: 1;
+        }
+
         .fourrem{
             /* font-size: 4.0vw; */
             font-size: 5.0vw;
@@ -518,17 +564,35 @@ button:hover{
             text-align: center;
             line-height: .9;
         }
+        .threefourrem{
+            /* font-size: 3.4vw; */
+            font-size: 4.1vw;
+            text-align: center;
+            line-height: .9;
+        }
         .threefiverem{
             /* font-size: 3.4vw; */
             font-size: 4.25vw;
             text-align: center;
             line-height: .9;
         }
+        .twofiverem{
+            /* font-size: 2.4vw; */
+            font-size: 3.25vw;
+            text-align: center;
+            line-height: 1.1;
+        }
         .tworem{
             /* font-size: 2.4vw; */
             font-size: 3vw;
             text-align: center;
             line-height: 1.1;
+        }
+        .onefiverem{
+            font-size: 2.5vw;
+            text-align: center;
+            line-height: 1;
+            margin: 0vw;
         }
         .onerem{
             font-size: 2.5vw;
@@ -563,9 +627,16 @@ a{
 }
 .center {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
-    /* text-align: center; */
+  text-align: center;
+  text-align: justify;
+  padding: 1.5vw 1.5vw;
+  margin: auto;
+}
+
+.center2 {
+   margin: auto 4vw;
 }
 
 .bottom{
@@ -578,6 +649,10 @@ padding-top: 3vw;
 
 .paddingleftsmall{
     padding-left: .5vw;
+}
+
+.paddingleftbig{
+    padding-left: 5vw;
 }
 
 .rightmargin
@@ -616,6 +691,7 @@ padding-top: 3vw;
 .bottommargin{
     padding-bottom: .5vw;
 }
+
 a:hover{
     color: #d8dbe2ff;
 }
@@ -628,3 +704,39 @@ a:hover{
      z-index: 2;
 } */
 
+.markerempty{
+        content: "";
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: transparent;
+    border: .5vw solid #006992ff;
+    border-radius: 50%;
+    margin: -.5vw .15vw 0 2vw;
+}
+.markerfull{
+        content: "";
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: #006992ff;
+    border: .5vw solid #006992ff;
+    border-radius: 50%;
+    margin: -.5vw .15vw 0 2vw;
+}
+.markerfull2{
+        content: "";
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: #3BA99C;
+    border: .5vw solid #3BA99C;
+    border-radius: 50%;
+    margin: -.5vw .15vw 0 2vw;
+}
+.markerfull3{
+        content: "";
+    width: 2vw;
+    height: 2vw;
+    background-color: #d8dbe2ff;
+    border: .5vw solid #d8dbe2ff;
+    border-radius: 50%;
+    margin: 0vw 2vw 0vw 0vw;
+}
