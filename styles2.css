@@ -359,12 +359,20 @@ button:hover{
             /* min-width: 70vw; */
             /* justify-content: center; */
             /* height: 0vw; */
-            
-            
+        }
+
+        div:hover{
+        cursor: pointer;
+        transition-duration: .4s;
+        opacity: 1;
         }
 
         .purp {
             background-color: #59114dff;
+        }
+
+        div:hover.hoverpurp{
+    background-color: #59114dff;
         }
 
         .purpt {
@@ -375,6 +383,10 @@ button:hover{
             background-color: #006992ff;
         }
 
+        div:hover.hoverblue{
+    background-color: #006992ff;
+        }
+
         .bluet {
             color: #006992ff;
         }
@@ -383,36 +395,69 @@ button:hover{
             background-color: #074f57ff;
         }
 
+        div:hover.hovergreen{
+        background-color: #074f57ff;
+        }
+
         .greent {
             color: #074f57ff;
         }
 
+        div:hover.hovertextgreen{
+        color: #074f57ff;
+        }
+        
         .orange {
             background-color: #ff715bff;
         }
-
+        div:hover.hoverorange{
+    background-color: #ff715bff;
+        }
+        
         .oranget {
             color: #ff715bff;
+        }
+        
+        div:hover.hovertextorange{
+    color: #ff715bff;
         }
 
         .plat {
             background-color: #d8dbe2ff;
         }
-
+        div:hover.hoverplat{
+        background-color: #d8dbe2ff;
+        }
+        
         .platt {
             color: #d8dbe2ff;
+        }
+
+        div:hover.hovertextplat{
+        color: #d8dbe2ff;
         }
 
         .teal {
             background-color: #3BA99C;
         }
 
+        div:hover.hoverteal{
+        background-color: #3BA99C;
+        }
+        
         .tealt {
             color: #3BA99C;
         }
-
+        div:hover.hovertextteal{
+            color: #3BA99C;
+        }
+        
         .red {
             background-color: #a53860ff;
+        }
+
+        div:hover.hoverred{
+        background-color: #a53860ff;
         }
 
         .redt {
@@ -426,61 +471,61 @@ button:hover{
             text-align: center;
         }
         h1{
-            font-size: 4.4vw;
+            /* font-size: 4.4vw; */
             font-size: 5.5vw;
             text-align: center;
             line-height: .9;
         }
         .tenrem{
-            font-size: 10vw;
+            /* font-size: 10vw; */
             font-size: 12.5vw;
             text-align: center;
             line-height: .9;
         }
         .sevenrem{
-            font-size: 7vw;
+            /* font-size: 7vw; */
             font-size: 8.75vw;
             text-align: center;
             line-height: .9;
         }
         .sixrem{
-            font-size: 6vw;
+            /* font-size: 6vw; */
             font-size: 7.8vw;
             text-align: center;
             line-height: .9;
         }
         .fiverem{
-            font-size: 5vw;
+            /* font-size: 5vw; */
             font-size: 6.25vw;
             text-align: center;
             line-height: .9;
         }
         .fourrem{
-            font-size: 4.0vw;
+            /* font-size: 4.0vw; */
             font-size: 5.0vw;
             text-align: center;
             line-height: 0.8;
         }
         .fourthreerem{
-            font-size: 4.3vw;
+            /* font-size: 4.3vw; */
             font-size: 5.375vw;
             text-align: center;
             line-height: 0.8;
         }
         .threerem{
-            font-size: 3vw;
+            /* font-size: 3vw; */
             font-size: 3.75vw;
             text-align: center;
             line-height: .9;
         }
         .threefiverem{
-            font-size: 3.4vw;
+            /* font-size: 3.4vw; */
             font-size: 4.25vw;
             text-align: center;
             line-height: .9;
         }
         .tworem{
-            font-size: 2.4vw;
+            /* font-size: 2.4vw; */
             font-size: 3vw;
             text-align: center;
             line-height: 1.1;
@@ -503,7 +548,6 @@ button:hover{
             visibility: hidden;
         }
         .vertical {
-/* font-size: 3rem; */
   text-orientation: sideways; 
   writing-mode: sideways-lr;
 }
@@ -517,9 +561,23 @@ a{
     padding-left: .3vw;
     padding-left: 1vw;
 }
+.center {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+    /* text-align: center; */
+}
 
 .bottom{
 padding-top: 3vw;
+}
+
+.paddingleft{
+    padding-left: 1.5vw;
+}
+
+.paddingleftsmall{
+    padding-left: .5vw;
 }
 
 .rightmargin
@@ -545,7 +603,7 @@ padding-top: 3vw;
 }
 .topmarginsmall{
     margin-top: .5vw;
-    margin-top: .625vw;
+    margin-top: 1.5vw;
 }
 .topmarginmid{
     margin-top: 5.9vw;
@@ -564,8 +622,9 @@ a:hover{
     a[href^="mailto:"]:hover {
       color: #3BA99C;
     }
-.above{
+
+/* .above{
     position: relative;
      z-index: 2;
-}
+} */
 

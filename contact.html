@@ -55,16 +55,18 @@
         <div class="div83">
             <!-- EMAIL      EMAIL       EMAIL       EMAIL       EMAIL -->
             <div class="div42 purp">
-                <a href="mailto:r0381364@student.thomasmore.be"
-                    class="orbitron sixrem platt opacity40 bottom left">E-mail</a>
-                <a href="mailto:r0381364@student.thomasmore.be" class="orbitron sixrem platt opacity60 left">E-mail</a>
-                <a href="mailto:r0381364@student.thomasmore.be" class="orbitron sixrem platt  left">E-mail</a>
-
+                <a href="mailto:r0381364@student.thomasmore.be">
+                    <div class="div42 hoverorange purp">
+                        <div class="orbitron sixrem platt hovertextteal opacity40 left topmargin2 ">E-mail</div>
+                        <div class="orbitron sixrem platt hovertextteal opacity60 left">E-mail</div>
+                        <div class="orbitron sixrem platt hovertextteal left">E-mail</div>
+                    </div>
+                </a>
                 <!-- CHECK MY           CHECK MY  -->
                 <div class="div52 teal">
-                    <h5 class="bluet threerem orbitron marginright opacity40 alignright topmargin2">check my</h5>
+                    <h5 class="bluet threerem orbitron marginright opacity40 alignright topmarginsmall">check my</h5>
                     <h5 class="bluet threerem orbitron marginright opacity60 alignright">check my</h5>
-                    <h5 class="bluet threerem orbitron marginright  alignright">check my</h5>
+                    <h5 class="bluet threerem orbitron marginright alignright">check my</h5>
                 </div>
             </div>
 
@@ -75,10 +77,11 @@
             <div class="div1 teal"></div>
 
             <!-- GITHUB     GITHUB  GITHUB  -->
-            <div class="div22 orange">
-                <a href="https://github.com/pieterfranken88-bit"><img src="Assets/github logo.png" alt="GitHub Logo"
-                        class="div22"></a>
-            </div>
+            <a href="https://github.com/pieterfranken88-bit" target="_blank">
+                <div class="div22 orange hoverplat">
+                    <img src="Assets/github logo.png" alt="GitHub Logo" class="div22">
+                </div>
+            </a>
             <div class="div1 blue"></div>
             <div class="div1 teal"></div>
 
@@ -104,12 +107,20 @@
             </div>
 
             <!-- LINKEDIN LINKEDIN            LINKEDIN LINKEDIN -->
-            <div class="div21 teal">
-                <a href="www.linked.in" class="orbitron greent fourthreerem topmarginmid alignright">linked</a>
-            </div>
-            <div class="div1 green">
-                <a href="www.linked.in" class="orbitron platt sixrem bottom topmargin2">in</a>
-            </div>
+            <a href="www.linked.in" target="_blank">
+                <div class="div21 teal hoverplat">
+                    <div class="orbitron greent fourthreerem topmarginmid hovertextorange paddingleft">
+                        linked
+                    </div>
+                </div>
+            </a>
+            <a href="www.linked.in" target="_blank">
+                <div class="div1 green hoverorange">
+                    <div class="orbitron platt sixrem bottom left hovertextgreen topmargin2">
+                        in
+                    </div>
+                </div>
+            </a>
 
             <!-- FILL THE FORM   FILL THE FORM   FILL THE FORM -->
             <div class="div1">
@@ -136,30 +147,37 @@
 
             <!-- CONTACT FORM    CONTACT FORM    CONTACT FORM -->
             <div class="div64 blue">
-                <div class="reset grid-container orbitron oranget tworem">
-                    <div class="item1">
-                        <label for="firstName">First name</label>
-                        <input type="text" id="firstName">
-                    </div>
-                    <div class="item2">
-                        <label for="name">Last name</label>
-                        <input type="text" id="name">
-                    </div>
-                    <div class="item3">
-                        <label for="mail" class="nowrap">E-mail adress</label>
-                        <input type="email" id="mail">
-                    </div>
-                    <div class="item4">
-                        <label for="message">Message</label>
-                        <textarea id="message"></textarea>
-                    </div>
-                    <div class="item5">
-                        <button type="submit" class="tworem orbitron orange bluet">SUBMIT <span class="opacity60">SUBMIT
-                            </span>
-                            <span class="opacity40">SUBMIT </span></button>
+                <form method="post" action="https://tm-statweb.be/sendmail.php">
+                    <div class="hidden">
+                        <input type="hidden" name="studentemail" value="r0381364@student.thomasmore.be">
                     </div>
 
-                </div>
+                    <div class="reset grid-container orbitron oranget tworem">
+                        <div class="item1">
+                            <label for="firstName">First name</label>
+                            <input type="text" id="firstName" name="firstName">
+                        </div>
+                        <div class="item2">
+                            <label for="name">Last name</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="item3">
+                            <label for="mail" class="nowrap">E-mail adress</label>
+                            <input type="email" id="mail" name="mail">
+                        </div>
+                        <div class="item4">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"></textarea>
+                        </div>
+                        <div class="item5">
+                            <button type="submit" class="tworem orbitron orange bluet">SUBMIT <span
+                                    class="opacity60">SUBMIT
+                                </span>
+                                <span class="opacity40">SUBMIT </span></button>
+                        </div>
+
+                    </div>
+                </form>
             </div>
 
 
@@ -174,55 +192,64 @@
             <!-- BACK TO TOP      BACK TO TOP     BACK TO TOP -->
             <div class="div21">
                 <div class="div22 orange"></div>
-                <div class="div12 red"></div>
+                <div class="div12"></div>
 
                 <!-- VITAE       VITAE       VITAE       VITAE -->
-                <div class="div22 teal">
-                    <div class="div21 teal">
-                        <a href="cv.html" class="orbitron greent normal fiverem">Vitae</a>
-                        <a href="cv.html" class="orbitron greent normal tworem opacity40">Vitae Vitae</a>
-                        <a href="cv.html" class="orbitron greent normal tworem opacity20">Vitae Vitae</a>
+                <a href="cv.html">
+                    <div class="div22 teal hoverblue">
+                        <div class="div21">
+                            <div class="orbitron paddingleftsmall greent normal hovertextplat fiverem">Vitae</div>
+                            <div class="orbitron paddingleftsmall greent normal hovertextplat tworem opacity40 ">Vitae
+                                Vitae</div>
+                            <div class="orbitron paddingleftsmall greent normal hovertextplat tworem opacity20 ">Vitae
+                                Vitae</div>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
             <!-- EXPERIENCE      EXPERIENCE      EXPERIENCE -->
-            <div class="red div41">
-                <a href="experience.html" class="oranget orbitron fiverem opacity20">Experience</a>
-                <a href="experience.html" class="oranget orbitron fiverem">Experience</a>
-            </div>
+            <a href="experience.html">
+
+                <div class="red div41 hoverpurp">
+                    <div class="oranget orbitron fiverem hovertextplat opacity20">Experience</div>
+                    <div class="oranget orbitron fiverem hovertextplat">Experience</div>
+                </div>
+            </a>
 
             <!-- CURRICULUM      CURRICULUM      CURRICULUM -->
-            <!-- LOWER THE div21 green  LOWER THE div21 green   LOWER THE div21 green -->
-            <!-- LOWER THE div21 green  LOWER THE div21 green   LOWER THE div21 green -->
-            <!-- LOWER THE div21 green  LOWER THE div21 green   LOWER THE div21 green -->
-            <div class="div21 blue"></div>
-            <div class="div42 orange">
-                <a href="cv.html" class="bluet fiverem orbitron opacity20 topmarginmid">Curriculum</a>
-                <a href=" cv.html" class="bluet fiverem orbitron opacity40">Curriculum</a>
-                <a href="cv.html" class="bluet fiverem orbitron">Curriculum</a>
-            </div>
+            <!-- <div class="div21 blue"></div> -->
+            <a href="cv.html">
 
+                <div class="div42 orange hovergreen">
+                    <div class="bluet fiverem orbitron left hovertextplat opacity20 topmarginmid">Curriculum</div>
+                    <div class="bluet fiverem orbitron left hovertextplat opacity40">Curriculum</div>
+                    <div class="bluet fiverem orbitron left hovertextplat">Curriculum</div>
+                </div>
+            </a>
             <!-- EXPERIENCE VERTICAL     EXPERIENCE VERTICAL     EXPERIENCE VERTICAL -->
-            <div class="red div15"></div>
-            <div class="red div15"></div>
-            <div class="red div15">
-                <a href="experience.html"
-                    class="rightmargin threerem orbitron oranget vertical opacity20">Experience</a>
+            <a href="experience.html"></a>
+            <div class="div22 red hoverpurp">
+                <div class="div15"></div>
+                <div class="div15"></div>
+                <div class="div15 threerem orbitron oranget vertical hovertextplat rightmargin opacity20">
+                    Experience
+                </div>
+                <div class="div15 threerem orbitron oranget vertical hovertextplat opacity40">
+                    Experience
+                </div>
+                <div class="div15 threerem orbitron oranget vertical hovertextplat opacity60">
+                    Experience
+                </div>
             </div>
-            <div class="red div15">
-                <a href="experience.html"
-                    class="rightmargin threerem orbitron oranget vertical opacity40">Experience</a>
-            </div>
-            <div class="red div15">
-                <a href="experience.html"
-                    class="rightmargin threerem orbitron oranget vertical opacity60">Experience</a>
-            </div>
+            </a>
             <!-- HOME    HOME    HOME    HOME   HOME    HOME -->
+
             <div class="div21 blue">
                 <a href="index.html" class="orbitron tealt fourrem normal opacity20">Home</a>
                 <a href="index.html" class="orbitron tealt fourrem normal opacity40">Home</a>
                 <a href="index.html" class="orbitron tealt fourrem normal bottommargin">Home</a>
+
                 <!-- COPYRIGHT       COPYRIGHT       COPYRIGHT       COPYRIGHT -->
                 <div class="div22 purp">
                     <div class="div14 purp"></div>
@@ -248,40 +275,44 @@
                     <h2 class="orbitron purpt tworem">2025</h2>
 
                 </div>
-
             </div>
+
             <div class="div21"></div>
-            <div class="div21"></div>
+            <div class="div21 hidden"></div>
 
             <div class="div42 red">
                 <!-- HOBBIES        HOBBIES     HOBBIES     HOBBIES -->
-                <div class="div21">
-                    <div class="div21 blue">
-                        <a href="hobbies.html"
-                            class="orbitron oranget threefiverem left normal opacity20 topmarginsmall">Hobbies</a>
-                        <a href="hobbies.html" class="orbitron oranget threefiverem left normal opacity40">Hobbies</a>
-                        <a href="hobbies.html" class="orbitron oranget threefiverem left normal">Hobbies</a>
+                <a href="hobbies.html">
+                    <div class="div21">
+                        <div class="div21 blue hoverred">
+                            <div class="orbitron oranget threefiverem left normal hovertextplat opacity20 topmargin">
+                                Hobbies
+                            </div>
+                            <div class="orbitron oranget threefiverem left normal hovertextplat opacity40">Hobbies</div>
+                            <div class="orbitron oranget threefiverem left normal hovertextplat">Hobbies</div>
+                        </div>
+
+                        <!-- INTRESTS       INTRESTS        INTRESTS        INTRESTS -->
+                        <div class="div31 orange hoverred">
+                            <div class="orbitron bluet fourrem left normal hovertextplat">Intrests</div>
+                            <div class="orbitron bluet fourrem left normal hovertextplat opacity40">Intrests</div>
+                            <div class="orbitron bluet fourrem left normal hovertextplat opacity20">Intrests</div>
+                        </div>
                     </div>
 
-                    <!-- INTRESTS       INTRESTS        INTRESTS        INTRESTS -->
-                    <div class="div31 orange">
-                        <a href="hobbies.html" class="orbitron bluet fourrem left normal">Intrests</a>
-                        <a href="hobbies.html" class="orbitron bluet fourrem left normal opacity40">Intrests</a>
-                        <a href="hobbies.html" class="orbitron bluet fourrem left normal opacity20">Intrests</a>
+                    <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+                    <div class="div1 green hoverred">
+                        <div class="orbitron tealt threerem normal hovertextplat opacity20 paddingleft topmargin">&&
+                        </div>
+                        <div class="orbitron tealt sevenrem normal hovertextplat left">&</div>
                     </div>
-                </div>
+                    <!-- BACK TO TOP     BACK TO TOP     BACK TO TOP     BACK TO TOP -->
+                    <div>
+                        <div class="div1 red"></div>
+                        <!-- <div class="div1 red"></div> -->
 
-                <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
-                <div class="div1 green">
-                    <a href="hobbies.html" class="orbitron tealt threerem normal opacity20 topmarginsmall">&&</a>
-                    <a href="hobbies.html" class="orbitron tealt sevenrem normal">&</a>
-                </div>
-                <!-- BACK TO TOP     BACK TO TOP     BACK TO TOP     BACK TO TOP -->
-                <div>
-                    <div class="div1 red"></div>
-                    <!-- <div class="div1 red"></div> -->
-
-                </div>
+                    </div>
+                </a>
 
             </div>
         </div>
