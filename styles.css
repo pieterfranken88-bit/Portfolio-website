@@ -33,9 +33,6 @@ body{
     background-color: #006992ff;
     margin: 0vw;
     padding: 0;
-     /* display: table-cell; */
-    /* width: 0vw; */
-    /* overflow: hidden; */
 }
 
 img{
@@ -62,9 +59,7 @@ ul {
 }
 li {
   list-style-type: none;
-  /* background-color: #eeeeee; */
   flex: 0 0 100%;
-  /* grid: 0 0 100%; */
 }
 
 
@@ -77,22 +72,17 @@ li {
 }
 ul::scroll-button(*) {
   border: 0;
-  /* font-size: 2rem; */
   background: none;
-  /* color: black; */
-  /* opacity: 0.7; */
   cursor: pointer;
 }
 
 ul::scroll-button(*):hover,
 ul::scroll-button(*):focus {
-  /* opacity: .5; */
   background-color: #006992ff;
 }
 
 
 ul::scroll-button(*):disabled {
-  /* opacity: 0.5; */
   cursor: unset;
   background-color: #a53860ff;
 }
@@ -107,7 +97,6 @@ ul::scroll-button(*) {
 }
 ul::scroll-button(left) {
     content: "";
-    /* color: #3BA99C; */
     background: url('Assets/left.png');
     background-size: contain;
     width: 10vw;
@@ -119,7 +108,6 @@ ul::scroll-button(left) {
 
 ul::scroll-button(right) {
     content: "";
-    /* color: #ff715bff; */
     background: url('Assets/right.png');
     background-size: contain;
     width: 10vw;
@@ -254,12 +242,10 @@ button:hover{
         .div1 {
             width: 10vw;
             height: 12.5vw;
-            /* justify-content: flex-end; */
         }
         div.reset{
             width: 0vw;
             height: 0vw;
-            /* float: left; */
         }
         .div115 {
             width: 5vw;
@@ -370,11 +356,11 @@ button:hover{
         }
         .div84 {
             width: 80vw;
-            height: 50w;
+            height: 50vw;
         }
         .div85 {
             width: 80vw;
-            height: 62.5w;
+            height: 62.5vw;
         }
 
 
@@ -382,7 +368,6 @@ button:hover{
         /* COLORS       COLORS      COLORS      COLORS      COLORS      COLORS */
         
         div:hover{
-        /* cursor: pointer; */
         transition-duration: .4s;
         opacity: 1;
         }
@@ -392,7 +377,7 @@ button:hover{
         }
 
         div:hover.hoverpurp{
-    background-color: #59114dff;
+        background-color: #59114dff;
         }
 
         .purpt {
@@ -404,7 +389,7 @@ button:hover{
         }
 
         div:hover.hoverblue{
-    background-color: #006992ff;
+        background-color: #006992ff;
         }
 
         .bluet {
@@ -431,7 +416,7 @@ button:hover{
             background-color: #ff715bff;
         }
         div:hover.hoverorange{
-    background-color: #ff715bff;
+        background-color: #ff715bff;
         }
         
         .oranget {
@@ -439,7 +424,7 @@ button:hover{
         }
         
         div:hover.hovertextorange{
-    color: #ff715bff;
+        color: #ff715bff;
         }
 
         .plat {
@@ -626,17 +611,17 @@ button:hover{
             visibility: hidden;
         }
         .vertical {
-  text-orientation: sideways; 
-  writing-mode: sideways-lr;
-}
+        text-orientation: sideways; 
+        writing-mode: sideways-lr;
+        }
+
+
 a{
     text-decoration: none;
     display: block;
 }
 .left{
-    /* float: left; */
     text-align: left;
-    padding-left: .3vw;
     padding-left: 1vw;
 }
 .center {
@@ -653,54 +638,32 @@ a{
    margin: auto 4vw;
 }
 
-.bottom{
-padding-top: 3vw;
+.mb2{
+    margin-bottom: .5vw;
 }
 
-.paddingleft{
+.pl15{
     padding-left: 1.5vw;
 }
 
-.paddingleftsmall{
+.pl05{
     padding-left: .5vw;
 }
 
-.paddingleftbig{
+.pl5{
     padding-left: 5vw;
 }
 
-.rightmargin
-{
-    margin-left: -.5vw;
-    margin-left: -.625vw;
-}
 
 .alignright{
     text-align: right;
 }
-.topmargin{
-    margin-top: .5vw;
-    margin-top: .625vw;
-}
-.topmargin2{
-    margin-top: 1.8vw;
-    margin-top: 2.25vw;
-}
-.topmarginsmall{
-    margin-top: .5vw;
-    margin-top: 1.5vw;
-}
-.topmarginmid{
-    margin-top: 5.9vw;
-    margin-top: 7.375vw;
-}
-.topmarginbig{
-    margin-top: 8.5vw;
+
+
+.pt85big{
     margin-top: 10.625vw;
 }
-.bottommargin{
-    padding-bottom: .5vw;
-}
+
 
 a:hover{
     color: #d8dbe2ff;
@@ -709,10 +672,7 @@ a[href^="mailto:"]:hover {
     color: #3BA99C;
 }
 
-/* .above{
-    position: relative;
-    z-index: 2;
-    } */
+
     
     .markerempty{
         content: "";
@@ -831,6 +791,9 @@ a[href^="mailto:"]:hover {
 }
 .pl2{
     padding-left: 2vw;
+}
+.pl25{
+    padding-left: 2.5vw;
 }
 .pl3{
     padding-left: 3vw;
