@@ -64,6 +64,7 @@ li {
 
 
 ul {
+    background-ima;
   overflow: hidden;
   scroll-snap-type: x mandatory;
 }
@@ -232,7 +233,6 @@ button{
 button:hover{
     color: #d8dbe2ff;
     background-color: #a53860ff;
-    /* transform: rotateY(180deg);  */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Shadow effect */
 }
 
@@ -489,19 +489,16 @@ button:hover{
             text-align: center;
         }
         h1{
-            /* font-size: 4.4vw; */
             font-size: 5.5vw;
             text-align: center;
             line-height: .9;
         }
         .tenrem{
-            /* font-size: 10vw; */
             font-size: 12.5vw;
             text-align: center;
             line-height: .9;
         }
         .eightrem{
-            /* font-size: 7vw; */
             font-size: 10vw;
             font-weight: 700;
             text-align: center;
@@ -509,28 +506,24 @@ button:hover{
         }
 
         .sevenrem{
-            /* font-size: 7vw; */
             font-size: 8.75vw;
             text-align: center;
             line-height: .9;
         }
 
         .sixrem{
-            /* font-size: 6vw; */
             font-size: 7.8vw;
             text-align: center;
             line-height: .9;
         }
 
         .fivefiverem{
-            /* font-size: 5vw; */
             font-size: 7vw;
             text-align: center;
             line-height: 1;
         }
 
         .fiverem{
-            /* font-size: 5vw; */
             font-size: 6.25vw;
             /* text-align: center; */
             line-height: .9;
@@ -538,50 +531,41 @@ button:hover{
         }
 
         .fourfiverem{
-            /* font-size: 4.0vw; */
             font-size: 5.5vw;
-            /* text-align: center; */
             line-height: 1;
         }
 
         .fourrem{
-            /* font-size: 4.0vw; */
             font-size: 5.0vw;
             text-align: center;
             line-height: 0.8;
         }
         .fourthreerem{
-            /* font-size: 4.3vw; */
             font-size: 5.375vw;
             text-align: center;
             line-height: 0.8;
         }
         .threerem{
-            /* font-size: 3vw; */
             font-size: 3.75vw;
             text-align: center;
             line-height: .9;
         }
         .threefourrem{
-            /* font-size: 3.4vw; */
             font-size: 4.1vw;
             text-align: center;
             line-height: .9;
         }
         .threefiverem{
-            /* font-size: 3.4vw; */
             font-size: 4.25vw;
             text-align: center;
             line-height: .9;
         }
         .twofiverem{
-            /* font-size: 2.4vw; */
             font-size: 3.25vw;
             text-align: center;
             line-height: 1.1;
         }
         .tworem{
-            /* font-size: 2.4vw; */
             font-size: 3vw;
             text-align: center;
             line-height: 1.1;
@@ -609,6 +593,9 @@ button:hover{
         }
         .hidden{
             visibility: hidden;
+        }
+        .none{
+            display: none;
         }
         .vertical {
         text-orientation: sideways; 
@@ -800,4 +787,8 @@ a[href^="mailto:"]:hover {
 }
 .z0{
     z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+
 }
