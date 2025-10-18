@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&family=Orbitron:wght@400..900&display=swap');
 .orbitron {
     font-family: "Orbitron", sans-serif;
-    /* font-optical-sizing: auto; */
     font-weight: 900;
     font-style: normal;
     margin: 0;
@@ -9,7 +8,6 @@
 }
 .monda {
   font-family: "Monda", sans-serif;
-  /* font-optical-sizing: auto; */
   font-size: 1.9vw;
   line-height: 1.15;
   font-weight: 700;
@@ -816,8 +814,3 @@ a[href^="mailto:"]:hover {
 .z0{
     z-index: -1;
 }
-
-
-
-
-
