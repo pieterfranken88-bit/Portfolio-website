@@ -46,18 +46,22 @@ body{
         body{
             transform: scale(.8);
             transform-origin: top;
+            height: calc(100vh / 0.8);
         }
     }
     @media only screen and (min-width: 1600px) {
         body{
             transform: scale(.65);
             transform-origin: top;
+            height: calc(100vh / 0.8);
+            
         }
     }
     @media only screen and (min-width: 2000px) {
         body{
             transform: scale(.5);
             transform-origin: top;
+            height: calc(100vh / 0.8);
         }
     }
     
