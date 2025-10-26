@@ -397,7 +397,8 @@ button:hover{
 
         /* COLORS       COLORS      COLORS      COLORS      COLORS      COLORS */
         
-        div:hover{
+        div:hover,
+        h1:hover{
         transition-duration: .4s;
         opacity: 1;
         }
@@ -409,11 +410,14 @@ button:hover{
         div:hover.hoverpurp{
         background-color: #59114dff;
         }
-
+        
         .purpt {
             color: #59114dff;
         }
-
+        div:hover.hovertextpurp{
+        color: #59114dff;
+        }
+        
         .blue {
             background-color: #006992ff;
         }
