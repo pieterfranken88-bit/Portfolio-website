@@ -82,49 +82,49 @@ img{
 
 /* LIST        LIST       LIST         LIST        LIST       LIST  */
 ul {
-  width: 60vw;
-  height: 50vw;
-  display: flex;
-  margin: 0;
-  padding: 0;
+    width: 60vw;
+    height: 50vw;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 li {
-  list-style-type: none;
-  flex: 0 0 100%;
+    list-style-type: none;
+    flex: 0 0 100%;
 }
 
 
 ul {
-  overflow: hidden;
-  scroll-snap-type: x mandatory;
-}
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    }
 li {
-  scroll-snap-align: center;
+    scroll-snap-align: center;
 }
 ul::scroll-button(*) {
-  border: 0;
-  background: none;
-  cursor: pointer;
+    border: 0;
+    background: none;
+    cursor: pointer;
 }
 
 ul::scroll-button(*):hover,
 ul::scroll-button(*):focus {
-  background-color: #006992ff;
+    background-color: #006992ff;
 }
 
 
 ul::scroll-button(*):disabled {
-  cursor: unset;
-  background-color: #a53860ff;
+    cursor: unset;
+    background-color: #a53860ff;
 }
 
 ul {
-  anchor-name: --my-carousel;
+    anchor-name: --my-carousel;
 }
 
 ul::scroll-button(*) {
-  position: absolute;
-  position-anchor: --my-carousel;
+    position: absolute;
+    position-anchor: --my-carousel;
 }
 ul::scroll-button(left) {
     content: "";
