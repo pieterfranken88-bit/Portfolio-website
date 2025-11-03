@@ -21,6 +21,7 @@
 html {
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 body{
@@ -31,29 +32,29 @@ body{
     transform-origin: top;
 }
 @media only screen and (min-width: 660px) {
-        body{
-            transform: scale(1.1);
-            transform-origin: top;
-        }
+    body{
+        transform: scale(1.1);
+        transform-origin: top;
     }
-@media only screen and (min-width: 960px) {
+}
+    @media only screen and (min-width: 960px) {
         body{
             transform: scale(1);
             transform-origin: top;
         }
     }
-@media only screen and (min-width: 1440px) {
-    body{
-        transform: scale(.8);
-        transform-origin: top;
-        height: calc(100vh / 0.8);
+    @media only screen and (min-width: 1440px) {
+        body{
+            transform: scale(.8);
+            transform-origin: top;
+            height: calc(100vh / 0.8);
+        }
     }
-}
-@media only screen and (min-width: 1600px) {
-    body{
-        transform: scale(.65);
-        transform-origin: top;
-        height: calc(100vh / 0.8);
+    @media only screen and (min-width: 1600px) {
+        body{
+            transform: scale(.65);
+            transform-origin: top;
+            height: calc(100vh / 0.8);
         
     }
 }
